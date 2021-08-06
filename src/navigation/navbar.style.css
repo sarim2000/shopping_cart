@@ -1,0 +1,35 @@
+.navbar li {
+	font-weight: 500;
+	color: rgb(165, 136, 20);
+	font-size: 1.7em;
+	animation: example1 1s;
+	/* animation-fill-mode: backwards; */
+}
+.navbar {
+	position: sticky;
+	top: 0;
+	padding: 10px;
+	background-color: black;
+	z-index: 999;
+}
+
+.navcontents {
+	display: flex;
+	justify-content: space-around;
+}
+.others {
+	display: flex;
+}
+.others li {
+	padding-right: 10px;
+}
+@keyframes example1 {
+	from {
+		transform: translateX(-46px);
+		opacity: 0%;
+	}
+	to {
+		transform: translate(0);
+		opacity: 100%;
+	}
+}

@@ -1,0 +1,57 @@
+.image {
+	width: 8rem;
+	/* max-width: 100%; */
+	height: 8rem;
+	/* background-color: red; */
+	/* padding-right: 10px; */
+}
+.thumbnail:hover {
+	position: relative;
+	z-index: 999;
+}
+.desc p {
+	margin-top: 1em;
+	font-family: "Roboto", sans-serif;
+}
+
+.cart {
+	margin-top: 5px;
+}
+.cart input {
+	width: 40px;
+	margin-right: 10px;
+}
+.bookcard:hover {
+	box-shadow: 0 8px 16px 0 white;
+}
+.bookcard {
+	color: white;
+	font-weight: 900;
+	box-shadow: 0 8px 16px 0 rgb(165, 136, 20);
+	transition: 0.3s;
+	border-radius: 5px;
+	padding: 16px;
+	display: flex;
+	flex-wrap: wrap;
+	text-align: center;
+	justify-content: center;
+	flex-direction: column;
+	margin-top: 20px;
+}
+div.bookcard:nth-child(1) {
+	margin-top: 0;
+}
+.name {
+	font-size: 2em;
+	font-weight: 300;
+}
+.addtocart {
+	background-color: #36629d;
+	scale: 1.4;
+	cursor: pointer;
+	border: 0;
+	/* border-radius: 40%; */
+	border-radius: 5em;
+
+	margin-top: 1.1em;
+}

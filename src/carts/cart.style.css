@@ -1,0 +1,101 @@
+.maincartarea {
+	width: 100vw;
+	height: 100vh;
+	border-width: thick;
+	border-style: dashed;
+	box-sizing: border-box;
+	border-color: rgb(38, 69, 110);
+	--darkreader-inline-border-top: #36629d;
+	--darkreader-inline-border-right: #36629d;
+	--darkreader-inline-border-bottom: #36629d;
+	--darkreader-inline-border-left: #36629d;
+	background-color: #181a1b;
+	color: white;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+		Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.containingitem ol {
+	list-style: decimal;
+}
+.checkOut {
+	margin-top: 1em;
+	margin-bottom: 1.6em;
+
+	text-align: center;
+	font-size: 3em;
+}
+.infonameandqu {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.priceincart {
+	margin-top: 0.6em;
+}
+.priceincart h2 {
+	text-align: end;
+}
+
+.list li {
+	margin-bottom: 1.5em;
+}
+.addorminus {
+	display: flex;
+}
+.addorminus button {
+	background: content-box;
+	border: 0;
+	cursor: pointer;
+	padding: 0;
+	padding-right: 0.2em;
+	padding-left: 0.2em;
+}
+
+.totalcost {
+	padding-top: 0.6em;
+	text-align: end;
+}
+
+.btn {
+	margin-top: 1em;
+	display: inline-block;
+	padding: 0.5em 3em;
+	border: 0.16em solid #bbbbbb;
+	margin: 0 0.3em 0.3em 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-family: "Roboto", sans-serif;
+	font-weight: 400;
+	color: #bbbbbb;
+	background-color: #36629d;
+	text-align: center;
+	transition: all 0.15s;
+}
+.btn:hover {
+	color: #bbbbbb;
+	border-color: #181a1b;
+}
+.btn:active {
+	color: #bbbbbb;
+	border-color: #36629d;
+}
+.totalname {
+	margin-bottom: 1em;
+}
+.total {
+	margin-bottom: 1.5em;
+	border-style: solid;
+	border-width: medium;
+	border-right-width: none;
+	border-left-width: none;
+	border-left-width: 0px;
+	border-right-width: 0px;
+	padding-bottom: 0.7em;
+}
+.returning {
+	display: flex;
+	justify-content: space-evenly;
+}
