@@ -22,6 +22,12 @@ function App() {
 			setCart((cartItems) => {
 				return [...x];
 			});
+		} else {
+			let newCartItems = cartItems.filter((ele) => ele.id !== id);
+			console.log(newCartItems);
+			setCart((cartItems) => {
+				return [...newCartItems];
+			});
 		}
 	};
 	const increment = async (id) => {
