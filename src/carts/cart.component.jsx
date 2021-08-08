@@ -44,8 +44,15 @@ const Cart = ({ cartItem, totalprice, decrement, increment }) => {
 						<Link to="/shopping">
 							<button className="btn">Return to Shopping</button>
 						</Link>
-						<Link to="/">
-							<button className="btn" onClick={() => alert(':" Thank you')}>
+						<Link to="/shopping_cart">
+							<button
+								className="btn"
+								onClick={() =>
+									cartTotal === 0
+										? alert("Please buy a book")
+										: alert("Thank you")
+								}
+							>
 								Pay
 							</button>
 						</Link>

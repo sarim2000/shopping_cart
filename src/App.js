@@ -82,7 +82,7 @@ function App() {
 		<Router>
 			<div>
 				<Switch>
-					<Route exact path="/">
+					<Route exact path="/shopping_cart">
 						<HomePage />
 					</Route>
 					<Route exact path="/shopping">
