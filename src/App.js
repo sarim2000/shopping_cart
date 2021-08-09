@@ -6,10 +6,22 @@ import Cart from "./carts/cart.component";
 import cartInfo from "./cart";
 import { useState } from "react";
 import { v4 as uuidv4 } from "uuid";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function App() {
 	const [cartItems, setCart] = useState(cartInfo);
 	const [totalPrice, setPrice] = useState(0);
+	const notify = () =>
+		toast.success("❤ Added to cart", {
+			position: "top-center",
+			autoClose: 2000,
+			hideProgressBar: true,
+			closeOnClick: true,
+			pauseOnHover: true,
+			draggable: true,
+			progress: undefined,
+		});
 	const decrement = (id) => {
 		// const { id } = e;
 		let pos = cartItems.findIndex((ele) => ele.id === id);
@@ -35,7 +47,6 @@ function App() {
 		let pos = cartItems.findIndex((ele) => ele.id === id);
 		console.log(pos);
 		let x = cartItems;
-		console.log(x[pos]);
 		let qu = parseInt(x[pos].quantity);
 		x[pos].quantity = qu + 1;
 		setCart((cartItems) => {
@@ -75,8 +86,8 @@ function App() {
 		} else {
 			console.log(2);
 		}
+		notify();
 	};
-	console.log(cartItems);
 
 	return (
 		<Router>
@@ -98,6 +109,17 @@ function App() {
 					</Route>
 				</Switch>
 			</div>
+			<ToastContainer
+				position="top-center"
+				autoClose={5000}
+				hideProgressBar
+				newestOnTop
+				closeOnClick
+				rtl={false}
+				pauseOnFocusLoss
+				draggable
+				pauseOnHover
+			/>
 		</Router>
 	);
 }
